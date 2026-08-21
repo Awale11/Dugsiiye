@@ -1,0 +1,39 @@
+.item {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    min-height: 50px;
+    padding: 0 14px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.checkbox {
+    width: 24px;
+    height: 24px;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+.text {
+    flex: 1;
+    font-size: 15px;
+    color: #2d3748;
+}
+
+.completedText {
+    text-decoration: line-through;
+    color: #94a3b8;
+}
+.delete {
+    color: #ef4444;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+}
+.delete:hover {
+    color: #b91c1c;
+}

@@ -1,0 +1,11 @@
+/* body {
+  background-color: rgba(138, 43, 226, 0.1);
+  padding: 20px;
+}; */
+
+.app {
+  min-height: 100vh;
+  background-color: #e9e3ff;
+  padding: 30px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,36 @@
+import React, { useContext, useState } from 'react'
+import TodoContext from './TodoContext';
+
+import styles from './TodoForm.module.css'
+
+export const TodoForm = () => {
+
+  const [text, setText] = useState('');
+  const { dispatch } = useContext(TodoContext)
+
+  const handleAdd = () => {
+    if (text.trim()) {
+      const newTodo = {
+        id: Date.now(),
+        text,
+        completed: false,
+      };
+      dispatch({ type: 'add', payload: newTodo });
+      setText('');
+    }
+  };
+
+  return (
+
+    <div className={styles.container}>
+     <input className={styles.input}
+        type="text"
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+        placeholder="Add a new todo..."
+      />
+      <button className={styles.button}
+      onClick={handleAdd}>Add</button>
+    </div>
+  )
+}

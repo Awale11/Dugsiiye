@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.input { 
+    flex: 1;
+    height: 50px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    border: 2px solid rgb(224, 224, 224);
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;   
+}
+.input:focus {
+    border-color: hsl(273, 100%, 50%);
+}
+
+.button {
+    width: 90px;
+    height: 50px;
+    background-color: #8b00ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+.button:hover {
+    background-color: rgb(120, 0, 220);
+}
+
+/* box-sizing: border-box;
+
+→ "Width/height hesabına padding ve border'ı dahil et."
+
+outline: none;
+
+→ "Element focus olduğunda tarayıcının varsayılan dış çizgisini kaldır." */
+
